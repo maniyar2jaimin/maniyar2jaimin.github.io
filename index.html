@@ -52,12 +52,12 @@
     <!-- Navigation -->
     <nav id="main-menu">
         <ul class="nav nav-vertical">
-            <li><a href="http://jaiminmaniyar.in/#start"><span>Start</span></a></li>
-            <li><a href="http://jaiminmaniyar.in/#resume"><span>Resume</span></a></li>
-            <li><a href="http://jaiminmaniyar.in/#portfolio"><span>Portfolio</span></a></li>
-            <li><a href="http://jaiminmaniyar.in/#achieve"><span>Achievements</span></a></li>
-            <li><a href="http://jaiminmaniyar.in/#testimonials"><span>References</span></a></li>
-            <li><a href="http://jaiminmaniyar.in/#contact"><span>Contact</span></a></li>
+            <li><a href="#start" class="prevent"><span>Start</span></a></li>
+            <li><a href="#resume" class="prevent"><span>Resume</span></a></li>
+            <li><a href="#portfolio" class="prevent"><span>Portfolio</span></a></li>
+            <li><a href="#achieve" class="prevent"><span>Achievements</span></a></li>
+            <li><a href="#testimonials" class="prevent"><span>References</span></a></li>
+            <li><a href="#contact" class="prevent"><span>Contact</span></a></li>
         </ul>
     </nav>
 
@@ -747,7 +747,14 @@
 
 <!-- JS Libraries -->
 <script src="assets/js/jquery-1.11.3.min.js"></script>
+<script>
+$(".navbar a,.navbar .prevent").on('click', function(event) {
 
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+}
+</script>
 <!-- JS Plugins -->
 <script>
 window.paceOptions = {
