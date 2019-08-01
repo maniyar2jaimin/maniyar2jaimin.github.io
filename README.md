@@ -1,3 +1,3 @@
 # maniyar2jaimin.github.io
 
-THis is my personal github page for showing my skills & work
+This is my personal github page for showing my skills & work
